@@ -1,0 +1,18 @@
+
+header {
+    height:70px;
+    width: auto;
+    background-color: antiquewhite;
+}
+
+.header-logo {
+    float: left;
+    font-size: 20px;
+}
+
+
+.header-list li {
+    list-style: none;
+    float: right;
+    font-size: 15px;
+}
