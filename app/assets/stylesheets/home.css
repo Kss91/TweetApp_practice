@@ -2,7 +2,7 @@
 header {
     height:70px;
     width: auto;
-    background-color: antiquewhite;
+    background-color:aliceblue;
 }
 
 .header-logo {
@@ -15,4 +15,12 @@ header {
     list-style: none;
     float: right;
     font-size: 15px;
+    margin-top: 15px;
+    padding: 10px;
 }
+
+img {
+    height:300px;
+    width:auto;
+}
+
