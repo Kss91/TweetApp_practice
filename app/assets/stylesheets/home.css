@@ -1,14 +1,28 @@
+html {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+
+.container { 
+  width:700px;
+  padding: 30px;
+}
+
 
 header {
     height:70px;
     width: auto;
-    background-color:aliceblue;
+    background-color:rgb(112, 161, 183);
 }
 
 .header-logo {
     float: left;
-    font-size: 20px;
-}
+    font-size: 25px;
+    padding: 20px;
+  }
 
 
 .header-list li {
@@ -20,7 +34,7 @@ header {
 }
 
 img {
-    height:300px;
+    height:400px;
     width:auto;
 }
 

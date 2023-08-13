@@ -1,0 +1,13 @@
+<div class="index-wrappwer">
+  <div class="container">
+    <h1>Post#index</h1>
+    <p>ここにPostされた内容を一覧で表示していく</p>
+      <div class="posts-index">
+        <% @posts.each do |post|%>
+          <div class="posts-index-items">
+            <%= link_to("#{post.content}","/posts/#{post.id}") %>
+          </div>
+        <% end %>
+      </div>
+  </div>
+</div>
