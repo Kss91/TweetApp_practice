@@ -1,0 +1,15 @@
+<div class="posts-index">
+  <div class="container">
+    <div class="posts-content">
+      <div class="post-user">
+        <p>ユーザー画像</p>
+        <p>ユーザー名</p>
+      </div>
+      <%= @post.content %>
+    </div>
+    <div class="content-list">
+      <%= link_to("編集", "/posts/#{@post.id}/edit") %>
+      <%= link_to("削除", "/posts/#{@post.id}/destroy", data: {"turbo-method": :post}) %>
+    </div>
+  </div>
+</div>

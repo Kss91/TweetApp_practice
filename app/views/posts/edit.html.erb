@@ -1,0 +1,15 @@
+<div class="update-wrapper">
+  <div class="container">
+    <h1>編集画面</h1>
+    <p>修正ページ</p>
+      <div class="posts-content">
+        <%= form_tag("/posts/#{@post.id}/update") do %>
+          <textarea name="content"><%= @post.content %></textarea>
+          <input type="submit" value="編集">
+        <% end %>
+      </div>
+    <div class="content-list">
+      <%= link_to("戻る","/posts/index") %>
+    </div>
+  </div>
+</div>
