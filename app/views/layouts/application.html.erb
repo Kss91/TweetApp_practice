@@ -10,7 +10,26 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body>    
+    <header>
+      <div class="header-logo">
+        <%= link_to("サイトのロゴ","/") %>
+      </div>
+      <div class="header-list">
+        <ul>
+          <li>
+            リスト１
+          </li>
+          <li>
+            リスト２
+          </li>
+          <li>
+            リスト３
+          </li>
+        </ul>
+      </div>
+    </header>
+
     <%= yield %>
   </body>
 </html>
