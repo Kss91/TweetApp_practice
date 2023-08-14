@@ -13,3 +13,23 @@
  */
 
  @import "bootstrap";
+
+ html {
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+  margin: 0px;
+}
+
+.container { 
+  width:700px;
+  padding: 30px;
+}
+
+
+header {
+    height:70px;
+    width: auto;
+    background-color:rgb(112, 161, 183);
+}
