@@ -2,5 +2,21 @@
 .top-wrapper {
   background-image: url(/main.jpg) ;
   background-size: cover;
-  height:600px;
+  background-position: center;
+  height:680px;
+}
+
+.top-container {
+  padding: 70px 200px;
+  color: #eeeeee;
+  -webkit-text-stroke: 1px #999999;
+}
+
+.top-container h1 {
+  font-size: 90px;
+  
+}
+
+.top-container p {
+  font-size: 40px;
 }

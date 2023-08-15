@@ -13,7 +13,7 @@
     </div>
     <div class="content-list">
       <%= link_to("編集", "/posts/#{@post.id}/edit") %>
-      <%= link_to("削除", "/posts/#{@post.id}/destroy", data: { "turbo-method": :post }) %>
+      <%= link_to("削除", "/posts/#{@post.id}/destroy", {method: "post" }) %>
     </div>
   </div>
 </div>
