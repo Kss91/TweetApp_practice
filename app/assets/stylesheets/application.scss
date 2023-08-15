@@ -33,29 +33,24 @@ body {
 /* header ================================ */
 
 header {
-    height:70px;
-    width: auto;
-    background-color:rgb(112, 161, 183);
-    padding: 0px 30px;
-}
+  height:70px;
+  width: auto;
+  background-color:rgb(112, 161, 183);
+  padding: 0px 30px;
 
-.header-logo {
-  float: left;
-  font-size: 25px;
-  line-height: 70px;
-}
+  .header-logo {
+    float: left;
+    font-size: 25px;
+    line-height: 70px;
+  }
 
-.header-list li {
-  list-style: none;
-  float: right;
-  font-size: 15px;
-  line-height: 70px;
-  padding: 0px 10px;
-}
-
-img {
-  height:400px;
-  width:auto;
+  .header-list li {
+    list-style: none;
+    float: right;
+    font-size: 15px;
+    line-height: 70px;
+    padding: 0px 10px;
+  }
 }
 
 /* main ================================ */
