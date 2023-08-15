@@ -4,10 +4,15 @@
     <p>ここにPostされた内容を一覧で表示していく</p>
       <div class="posts-index">
         <% @posts.each do |post|%>
+          <div class="post-user">
+            <img src="<%= "/user_images/default_img.jpg"%>">
+          </div>
           <div class="posts-index-items">
+            <p>ユーザー名</p>
             <%= link_to("#{post.content}","/posts/#{post.id}") %>
           </div>
         <% end %>
       </div>
+  </div>
   </div>
 </div>
