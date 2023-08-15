@@ -1,19 +1,37 @@
 
+/* posts/共通 ================================ */
+
+.contents-flex {
+  display: flex;
+  padding: 30px;
+}
+
+.contents-menu {
+  width: 30%;
+}
+
 /* posts/index ================================ */
+
+.index-wrapper {
+  display: flex;
+}
+
+.contents-menu {
+  flex-direction: row;
+}
+
+.posts-index {
+  height: auto;
+  width: 600px;
+}
+
 .posts-index-items {
   font-size: 18px;
   border: 1px solid #333333;
-  margin: 10px 100px;
+  margin: 10px 0px;
   display: block;
   text-align: left;
-}
-
-.posts-content {
-  font-size: 18px;
-  border: 1px solid #333333;
-  margin: 10px 100px;
-  display: block;
-  text-align: center;
+  height: 80px;
 }
 
 textarea {
@@ -24,9 +42,27 @@ textarea {
 
 
 /* posts/show================================ */
+
+.posts-content {
+  font-size: 18px;
+  border: 1px solid #333333;
+  margin: 10px 0px;
+  display: block;
+  text-align: left;
+}
+
+.post-user {
+  float:left;
+  display:flex;
+}
+
 .post-user img {
   width:50px;
   height: auto;
-  float:left;
-  margin: 0px 20px;
+  margin: 10px 20px 0px 20px;
+  flex-direction: row;
+}
+
+.post-text {
+  flex-direction: row;
 }

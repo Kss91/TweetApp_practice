@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  layout 'posts'
+
   def index
     @posts = Post.all.order(created_at: :desc)
   end
@@ -28,10 +30,10 @@ class PostsController < ApplicationController
     @post = Post.find_by(id: params[:id])
     @post.content = params[:content]
     if @post.save
-      redirect_to("/posts/#{@post.id}/show")
+      redirect_to("/posts/#{@post.id}")
       flash[:notice]="投稿を編集しました"
     else
-      render("posts/#{@post.id}/show")
+      render("posts/#{@post.id}")
     end
   end
 

@@ -1,18 +1,20 @@
 <%= stylesheet_link_tag "posts", "data-turbo-track": "reload" %>
 <div class="posts-index">
   <div class="container">
+    <h1>Post#show</h1>
+    <p>ここにPostされた内容の詳細を表示する</p>
     <div class="posts-content">
       <div class="post-user">
         <img src="<%= "/user_images/default_img.jpg"%>">
-        <p>ユーザー名</p>
       </div>
       <div class="post-text">
+        <p>ユーザー名</p>
         <%= @post.content %>
       </div>
     </div>
     <div class="content-list">
       <%= link_to("編集", "/posts/#{@post.id}/edit") %>
-      <%= link_to("削除", "/posts/#{@post.id}/destroy", data: {"turbo-method": :post}) %>
+      <%= link_to("削除", "/posts/#{@post.id}/destroy", data: { "turbo-method": :post }) %>
     </div>
   </div>
 </div>
