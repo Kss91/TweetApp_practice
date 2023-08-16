@@ -1,0 +1,11 @@
+ja:
+  activerecord:
+    attributes:
+      user:
+        name: 名前
+      post:
+        content: 投稿
+  activemodel:   # Formオブジェクトを用いた場合
+    attributes:
+      post:
+        content: 投稿

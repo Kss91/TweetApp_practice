@@ -20,6 +20,7 @@ class PostsController < ApplicationController
   end
 
   def new
+    @post = Post.new
   end
 
   def edit
@@ -33,7 +34,7 @@ class PostsController < ApplicationController
       redirect_to("/posts/#{@post.id}")
       flash[:notice]="投稿を編集しました"
     else
-      render("posts/#{@post.id}")
+      render("posts/edit")
     end
   end
 

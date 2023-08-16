@@ -73,4 +73,4 @@ end
 
 gem 'bootstrap', '~> 5.3.0'
 gem 'jquery-rails'
-
+gem 'rails-i18n'
