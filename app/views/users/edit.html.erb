@@ -1,0 +1,17 @@
+<%= stylesheet_link_tag "posts", "data-turbo-track": "reload" %>
+<div class="container">
+  <h1>ユーザー情報修正</h1>
+  <p>ここではユーザー（User）の内容を修正</p>
+    <% @user.errors.full_messages.each do |message| %>
+      <div class="error-message">
+        <%= message %>
+      </div>
+    <% end %>
+  <%= form_tag("/users/#{@user.id}/update") do %>
+    <p>ユーザー名</p>
+    <input class="form" name="name" value="<%= @user.name %>">
+    <p>メールアドレス</p>
+    <input class="form" name="email" value="<%= @user.email %>">
+    <input type="submit" value="編集">
+  <% end %>
+</div>

@@ -3,6 +3,7 @@ ja:
     attributes:
       user:
         name: 名前
+        email: メールアドレス
       post:
         content: 投稿
   activemodel:   # Formオブジェクトを用いた場合

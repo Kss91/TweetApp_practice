@@ -30,6 +30,19 @@ body {
   margin: 0px;
 }
 
+.contents-flex {
+  display: flex;
+  padding: 30px;
+}
+
+.contents-menu {
+  width: 30%;
+}
+
+.error-message {
+  color: rgb(240, 0, 0);
+}
+
 /* header ================================ */
 
 header {
