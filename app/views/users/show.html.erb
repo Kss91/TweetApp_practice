@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>User#show</h1>
+  <p>ここにUserの詳細を表示する</p>
+  <div class="posts-content">
+    <div class="post-user">
+      <img src="<%= "/user_images/default_img.jpg"%>">
+    </div>
+    <div class="user-name">
+      <%= @user.name %>
+      <p><%= @user.email %></p>
+    </div>
+  </div>
+  <div class="content-list">
+    <%= link_to("編集", "/users/#{@user.id}/edit") %>
+    <%= link_to("退会", "/users/#{@user.id}/delete") %>
+  </div>
+</div>

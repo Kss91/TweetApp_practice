@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>User#delete</h1>
+  <p>削除確認ページ</p>
+  <div class="posts-content">
+    <div class="post-user">
+      <img src="<%= "/user_images/default_img.jpg"%>">
+    </div>
+    <div class="user-name">
+      <%= @user.name %>
+      <p><%= @user.email %></p>
+    </div>
+  </div>
+  <div class="confirm">
+    <h2>退会すると、過去のデータなど全て削除されます。</h2>
+    <h2>本当に退会して良いですか？</h2>
+    <%= form_tag("/users/#{@user.id}/destroy") do %>
+      <input type="submit" value="退会">
+    <% end %>
+    <%= link_to("キャンセル","/users/#{@user.id}") %>
+  </div>
+</div>
