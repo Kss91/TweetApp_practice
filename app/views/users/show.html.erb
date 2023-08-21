@@ -3,7 +3,11 @@
   <p>ここにUserの詳細を表示する</p>
   <div class="posts-content">
     <div class="post-user">
-      <img src="<%= "/user_images/default_img.jpg"%>">
+      <% if @user.image_name %>
+        <img src="<%= "/user_images/#{@user.image_name}"%>">
+      <% else %>
+        <img src="<%= "/user_images/default_img.jpg"%>">
+      <% end %>
     </div>
     <div class="user-name">
       <%= @user.name %>
