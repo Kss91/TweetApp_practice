@@ -1,0 +1,17 @@
+<%= stylesheet_link_tag "posts", "data-turbo-track": "reload" %>
+<div class="container">
+  <h1>ログイン画面</h1>
+  <p>ここではログインの内容を記載</p>
+  <% if @error_message %>
+    <div class="error-message">
+      <%= @error_message %>
+    </div>
+  <% end %>
+  <%= form_tag("/login") do %>
+    <p>メールアドレス</p>
+    <input class="form" name="email" value="<%= @email %>">
+    <p>パスワード</p>
+    <input class="form" name="password" tupe="password" value="<%= @password %>">
+    <input type="submit" value="ログイン">
+  <% end %>
+</div>
