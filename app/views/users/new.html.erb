@@ -7,7 +7,7 @@
         <%= message %>
       </div>
     <% end %>
-  <%= form_tag("/users/create") do %>
+  <%= form_tag("/users/create", {multiple: true}) do %>
     <p>ユーザー名</p>
     <input class="form" name="name">
     <p>メールアドレス</p>
