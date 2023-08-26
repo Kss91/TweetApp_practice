@@ -5,16 +5,18 @@
     <p>ここにPostされた内容の詳細を表示する</p>
     <div class="posts-content">
       <div class="post-user">
-        <img src="<%= "/user_images/default_img.jpg"%>">
+        <img src="<%= "/user_images/#{@user.image_name}"%>">
       </div>
       <div class="post-text">
-        <p>ユーザー名</p>
+        <p><%= link_to(@user.name, "/users/#{@user.id}") %></p>
         <%= @post.content %>
       </div>
     </div>
-    <div class="content-list">
-      <%= link_to("編集", "/posts/#{@post.id}/edit") %>
-      <%= link_to("削除", "/posts/#{@post.id}/destroy", {method: "post" }) %>
-    </div>
+    <% if @user.id == @current_user.id %>
+      <div class="content-list">
+        <%= link_to("編集", "/posts/#{@post.id}/edit") %>
+        <%= link_to("削除", "/posts/#{@post.id}/destroy", {method: "post" }) %>
+      </div>
+    <% end %>
   </div>
 </div>
