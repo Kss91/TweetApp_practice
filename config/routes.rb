@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
+  post "likes/:post_id/create" => "likes#create"
+  post "likes/:post_id/destroy" => "likes#destroy"
+
   post "logout" => "users#logout"
   post "login" => "users#login"
   get "login" => "users#login_form"
+  
+  get "users/:id/likes" => "users#likes"
   post "users/:id/update" => "users#update"
   post "users/:id/destroy" => "users#destroy"
   get "users/:id/delete" => "users#delete"

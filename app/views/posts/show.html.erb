@@ -11,7 +11,17 @@
         <p><%= link_to(@user.name, "/users/#{@user.id}") %></p>
         <%= @post.content %>
       </div>
+      <% if Like.find_by(user_id: @current_user.id, post_id: @post.id) %>
+        <%= link_to("/likes/#{@post.id}/destroy", {method: "post"}) do %>
+          <span class="fa-solid fa-heart liked"></span>
+        <% end %>
+      <% else %>
+        <%= link_to("/likes/#{@post.id}/create", {method: "post"}) do %>
+          <span class="fa-solid fa-heart unlike"></span>
+        <% end %>
+      <% end %>
     </div>
+    <p class="likes_count"><%= @likes_count %></p>
     <% if @user.id == @current_user.id %>
       <div class="content-list">
         <%= link_to("編集", "/posts/#{@post.id}/edit") %>
