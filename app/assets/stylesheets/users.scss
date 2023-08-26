@@ -6,3 +6,40 @@ p {
   width: 300px;
   margin:5px 15px;
 }
+
+/* users/show&likes ================================ */
+
+.content-list {
+  margin: 20px;
+}
+
+.content-list a {
+  margin: 10px;
+}
+
+.user-tabs {
+  margin: 40px 0px 0px 0px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 2px 6px #c1ced7;
+  width: 240px;
+}
+
+.user-tabs li {
+  float: left;
+  list-style-type: none;
+}
+
+.user-tabs li.active {
+  border-bottom: 2px solid #3ecdc6;
+}
+
+.user-tabs li.active a {
+  color: #57575f;
+}
+
+.user-tabs a {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #afb6bf;
+}

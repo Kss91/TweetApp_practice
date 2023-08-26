@@ -3,3 +3,4 @@
 //= require popper
 //= require bootstrap
 //= require jquery_ujs
+import "@fortawesome/fontawesome-free" 
