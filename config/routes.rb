@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'relationships/followings'
+  get 'relationships/followers'
   post "likes/:post_id/create" => "likes#create"
   post "likes/:post_id/destroy" => "likes#destroy"
 
@@ -27,6 +29,12 @@ Rails.application.routes.draw do
 
   get "/" => "home#top"
   get "about" => "home#about"
+
+  resources :users do
+    resource :relationships, only: [:create, :destroy]
+    get 'followings' => 'relationships#followings', as: 'followings'
+    get 'followers' => 'relationships#followers', as: 'followers'
+  end
 
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
