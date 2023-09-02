@@ -1,10 +1,10 @@
 class Post < ApplicationRecord
 
+  belongs_to :user
+
   validates :content, presence: true  
   validates :content, length:{maximum: 140}
   validates :user_id, presence: true
-
-  belongs_to :User
 
   def user
     return User.find_by(id: self.user_id)
