@@ -28,15 +28,17 @@ body {
 .container { 
   width:70%;
   margin: 0px;
+  padding: 30px 80px;
 }
 
 .contents-flex {
   display: flex;
-  padding: 30px;
 }
 
 .contents-menu {
-  width: 30%;
+  padding: 30px;
+  width: 25%;
+  background-color: #f8f8f8;
 }
 
 .error-message {
@@ -53,8 +55,14 @@ header {
 
   .header-logo {
     float: left;
-    font-size: 25px;
+    font-size: 32px;
     line-height: 70px;
+  }
+
+  .header-logo a {
+    display: block;
+    text-decoration-line: none;
+    color: white;
   }
 
   .header-list li {
@@ -73,7 +81,7 @@ header {
 
   .header-list li:hover {
     background-color:rgb(47, 131, 169);
-    opacity: 0.7;
+    opacity: 0.8;
   }
 
 }
@@ -85,6 +93,21 @@ header {
   background-color:rgb(201, 147, 94);
   text-align: center;
   line-height: 30px;
+}
+
+.contents-menu li {
+  font-size: 20px;
+  padding: 6px 0px;
+}
+
+.contents-menu li:hover {
+  background-color: rgb(245, 237, 227);
+}
+
+.contents-menu a {
+  display: block;
+  text-decoration-line: none;
+  color: #000000;
 }
 
 /* footer ================================ */

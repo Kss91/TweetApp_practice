@@ -19,10 +19,6 @@
         <ul>
           <% if @current_user %>
             <li>
-              ログインユーザー:
-              <%= @current_user.name %>
-            </li>
-            <li>
               <%= link_to("新規投稿","/posts/new") %>
             </li>
             <li>
@@ -57,13 +53,17 @@
 
     <div class="contents-flex">
       <div class="contents-menu">
-        <h2>title</h2>
-        <ul>
-          <li>メニュー１</li>
-          <li>メニュー２</li>
-          <li>メニュー３</li>
-          <li>メニュー４</li>
-        </ul>
+        <% if @current_user %>
+          <h3>ユーザー：<%= @current_user.name %></h3>
+          <ul>
+            <li>
+              <%= link_to("マイページ","/users/#{@current_user.id}") %>
+            </li>
+            <li>メニュー２</li>
+            <li>メニュー３</li>
+            <li>メニュー４</li>
+          </ul>
+        <% end %>
       </div>  
 
     <%= yield %>
