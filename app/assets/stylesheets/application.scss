@@ -64,6 +64,18 @@ header {
     line-height: 70px;
     padding: 0px 10px;
   }
+
+  .header-list a {
+    display: block;
+    text-decoration-line: none;
+    color: white;
+  }
+
+  .header-list li:hover {
+    background-color:rgb(47, 131, 169);
+    opacity: 0.7;
+  }
+
 }
 
 /* main ================================ */
