@@ -5,6 +5,7 @@ class User < ApplicationRecord
   validates :email, uniqueness: true
 
   has_many :posts, dependent: :destroy
+  has_many :likes, dependent: :destroy
   
   has_many :relationships, class_name: "Relationship", foreign_key: "follower_id"
   has_many :reverse_of_relationships, class_name: "Relationship", foreign_key: "followed_id"
